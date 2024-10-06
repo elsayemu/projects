@@ -1,39 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <meta name="description" content="Muhammad Elsayed - Cybersecurity Student Portfolio">
+    <title>Muhammad Elsayed | Cybersecurity Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
             padding: 20px;
         }
-        h1 {
-            color: #333;
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #ddd;
         }
-        ul {
+
+        header h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #7f8c8d;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+
+        ul.projects {
             list-style-type: none;
-            padding: 0;
+            margin-top: 20px;
         }
-        li {
-            margin: 10px 0;
+
+        ul.projects li {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
         }
-        a {
+
+        ul.projects li:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        a.project-link {
             text-decoration: none;
-            color: #0073e6;
+            color: #2980b9;
+            font-weight: 600;
+            font-size: 1.1em;
         }
-        a:hover {
+
+        a.project-link:hover {
+            color: #1abc9c;
+        }
+
+        .linkedin {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .linkedin a {
+            text-decoration: none;
+            font-size: 1.2em;
+            color: #0077b5;
+            padding: 10px 20px;
+            border: 2px solid #0077b5;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .linkedin a:hover {
+            background-color: #0077b5;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        footer a:hover {
             text-decoration: underline;
         }
+
     </style>
 </head>
+
 <body>
-    <h1>My Projects</h1>
-    <p>Click on the links below to view each project's PDF:</p>
-    <ul>
-        <li><a href="pdfs/Cisco Switch Catalyst 2960-S Configuration Lab.pdf" target="_blank">Project 1: Cisco Switch Catalyst 2960-S Configuration Lab</a></li>
-        <!-- Add more projects as needed -->
-    </ul>
+
+    <header>
+        <h1>Muhammad Elsayed</h1>
+        <p>Cybersecurity Student | Passionate about Cybersecurity & Technology</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>My Projects</h2>
+            <p>Listed are some of my personal projects relating to IT and cybersecurity:</p>
+            <ul class="projects">
+                <li>
+                    <a href="pdfs/Cisco Switch Catalyst 2960-S Configuration Lab.pdf" class="project-link" target="_blank">Project 1: Cisco Switch Catalyst 2960-S Configuration Lab</a>
+                </li>
+                
+                <!-- Add more projects as needed -->
+            </ul>
+        </section>
+
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/muhammad-elsayed-886a1718b/" target="_blank">
+                Connect with me on LinkedIn
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Muhammad Elsayed. All rights reserved. | <a href="elsayed.muha@gmail.com">Contact me</a></p>
+    </footer>
+
 </body>
+
 </html>
